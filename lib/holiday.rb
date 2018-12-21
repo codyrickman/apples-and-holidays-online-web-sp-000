@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
       new_array = []
       h_array.each {|h| new_array << h.capitalize!}
       new_array.join
-      puts "  #{new_array}: " "#{supplies.join(", ")}"
+      puts "  #{new_array.to_s}: " "#{supplies.join(", ")}"
     end
   end
 end
